@@ -8,7 +8,7 @@ What is the largest prime factor of the number 600851475143 ?
 
 int main()
 {
-    long long int n = 600851475143 ;
+    long long int n = 11 ;
     int answer = 1;
 
     
@@ -21,6 +21,7 @@ int main()
                 {
                     answer = 2;
                     n = n/2;
+     
                 }
         }
         
@@ -35,7 +36,8 @@ int main()
                 if (n % i == 0)
                 {
                     answer = i;
-                    //n = n/i;
+                    n = n/i;
+                    std:: cout << n << " ";
                 }   
             }
         }
